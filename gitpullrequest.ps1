@@ -1,5 +1,8 @@
+import-html "https://github.com/node123/webapp"
 cd C:\Users\kobrablack\Documents\gitlab
 # git pull https://github.com/node123/webapp.git
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Invoke-WebRequest -Url https://github.com/node123/webapp.git
 function PullAllBranches() {
 $branches = git branch
 foreach($branch in $branches){
