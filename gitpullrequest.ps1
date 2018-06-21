@@ -1,4 +1,4 @@
-# cd C:\Users\kobrablack\Documents\gitlab
+cd C:\Users\kobrablack\Documents\gitlab
 # git pull https://github.com/node123/webapp.git
 function PullAllBranches() {
 $branches = git branch
